@@ -1,0 +1,59 @@
+.passport {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 12px;
+	padding: 10px 20px;
+
+	h3 {
+		color: rgb(255, 255, 255);
+		font-size: 62px;
+		font-weight: 800;
+		line-height: 74px;
+		letter-spacing: 0%;
+		text-align: center;
+	}
+
+	p {
+		color: rgb(128, 130, 141);
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 29px;
+		letter-spacing: 0%;
+		text-align: center;
+		margin-top: 32px;
+	}
+
+	.passportForm {
+		padding: 40px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		margin-top: 52px;
+		margin-bottom: 160px;
+	}
+}
+
+@media (max-width: 768px) {
+	.passport {
+		h3 {
+			font-size: 38px;
+		}
+		p {
+			font-size: 20px;
+			margin-top: 0px;
+		}
+
+		.passportForm {
+			padding: 20px;
+			margin-top: 22px;
+			margin-bottom: 50px;
+
+			button {
+				padding: 17px 20px;
+				font-size: 16px;
+			}
+		}
+	}
+}

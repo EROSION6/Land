@@ -1,0 +1,249 @@
+.loansApproved {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 12px;
+	padding: 10px 20px;
+	overflow: hidden;
+
+	.examination {
+		width: 130rem;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		background: url('/public/bg.png');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		h2 {
+			color: rgb(255, 255, 255);
+			font-size: 62px;
+			font-weight: 400;
+			text-align: center;
+			margin-top: 72px;
+			width: 60rem;
+
+			span {
+				font-weight: bold;
+			}
+		}
+		p {
+			color: rgb(128, 130, 141);
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 29px;
+			text-align: center;
+			margin: 28px 0 40px 0;
+			span {
+				color: white;
+				font-weight: bold;
+			}
+		}
+
+		button {
+			width: 23rem;
+			padding: 23px 34px;
+		}
+	}
+}
+
+.offerCard {
+	width: 100%;
+	margin-top: 100px;
+	padding: 0 200px;
+	margin-bottom: 160px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.gridOffer {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 21px;
+		margin-top: 52px;
+	}
+
+	.more {
+		color: rgb(34, 37, 40);
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 26px;
+		letter-spacing: 0%;
+		text-align: left;
+
+		padding: 28px 55px;
+		border-radius: 16px;
+		border: none;
+		background: rgb(255, 255, 255);
+		margin-top: 42px;
+		cursor: pointer;
+	}
+}
+
+.modalCard {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.3);
+	inset: 0;
+	z-index: 999999;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.content {
+		width: 594px;
+
+		padding: 24px;
+		border-radius: 32px;
+		background: rgb(49, 48, 53);
+
+		.text {
+			width: 100%;
+			height: 50px;
+			display: flex;
+			padding-bottom: 50px;
+			border-bottom: 2px solid rgb(61, 60, 65);
+
+			justify-content: space-between;
+			p {
+				color: rgb(255, 255, 255);
+				font-size: 26px;
+				font-weight: 700;
+				line-height: 31px;
+				letter-spacing: 0%;
+				text-align: left;
+				margin-bottom: 42px;
+			}
+
+			button {
+				width: 17.6px;
+				height: 17.6px;
+				font-size: 18px;
+				border: none;
+				color: white;
+				background-color: transparent;
+				outline: none;
+				cursor: pointer;
+			}
+		}
+
+		.info {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 17px;
+			align-items: center;
+			padding-top: 20px;
+
+			.infoCard {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+
+				p {
+					color: rgb(128, 130, 141);
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 19px;
+					text-align: left;
+				}
+
+				span {
+					color: rgb(255, 255, 255);
+					font-size: 16px;
+					font-weight: 800;
+					line-height: 19px;
+					text-align: right;
+				}
+
+				.sliders {
+					position: relative;
+					height: 12px;
+					width: 85px;
+					border-radius: 12.7px;
+					box-shadow: inset 0px 3.25px 3.25px 0px rgba(0, 0, 0, 0.12);
+					background: rgb(61, 60, 65);
+
+					.value {
+						position: absolute;
+						height: 100%;
+						box-sizing: border-box;
+						border-bottom: 2.6000001430511475px solid rgba(255, 255, 255, 0.22);
+						border-radius: 16.25px;
+						background: rgb(23, 183, 103);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 769px) {
+	.loansApproved {
+		.examination {
+			width: 100%;
+			img {
+				width: 90px;
+				height: 90px;
+			}
+			h2 {
+				font-size: 28px;
+				line-height: 30px;
+				margin-top: 32px;
+				width: 100%;
+			}
+			p {
+				font-size: 16px;
+				line-height: 24px;
+				margin: 22px 0;
+			}
+
+			button {
+				font-size: 16px;
+				padding: 17px 24px;
+			}
+		}
+	}
+
+	.offerCard {
+		margin-top: 42px;
+		padding: 0 5px;
+		margin-bottom: 50px;
+
+		h2 {
+			font-size: 28px;
+			line-height: 30px;
+		}
+		p {
+			font-size: 14px;
+			line-height: 17px;
+		}
+
+		.gridOffer {
+			margin-top: 22px;
+		}
+
+		.more {
+			font-size: 14px;
+			padding: 17px 20px;
+			margin-top: 22px;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.loansApproved {
+		.examination {
+			button {
+				width: 100%;
+			}
+		}
+	}
+}

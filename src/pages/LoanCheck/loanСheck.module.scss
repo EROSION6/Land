@@ -1,0 +1,151 @@
+.loanСheck {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 12px;
+	padding: 10px 20px;
+	margin-bottom: 160px;
+
+	h3 {
+		color: rgb(255, 255, 255);
+		font-size: 62px;
+		font-weight: 800;
+		line-height: 74px;
+		letter-spacing: 0%;
+		text-align: center;
+		margin-top: 52px;
+	}
+
+	.loanСheckDescription {
+		color: rgb(128, 130, 141);
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 29px;
+		letter-spacing: 0%;
+		text-align: center;
+		width: 37rem;
+		margin: 32px 0 52px 0;
+
+		b {
+			color: white;
+		}
+	}
+
+	.loanСheckBlock {
+		position: relative;
+		padding: 40px;
+		overflow: hidden;
+
+		strong {
+			color: rgb(255, 255, 255);
+			font-size: 36px;
+			font-weight: 700;
+			line-height: 43px;
+			letter-spacing: 0%;
+			text-align: left;
+		}
+
+		p {
+			color: rgb(255, 255, 255);
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 24px;
+			letter-spacing: 0%;
+			text-align: left;
+			margin-top: 18px;
+		}
+
+		button {
+			width: 100%;
+			margin-top: 42px;
+		}
+
+		img {
+			position: absolute;
+			&:nth-child(3) {
+				width: 182px;
+				height: 182px;
+				top: -5rem;
+				right: -2rem;
+			}
+			&:nth-child(2) {
+				width: 45px;
+				height: 45px;
+				top: 1rem;
+				right: 11rem;
+			}
+			&:nth-child(4) {
+				width: 35px;
+				height: 35px;
+				top: 7rem;
+				right: 2rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.loanСheck {
+		margin-bottom: 50px;
+
+		h3 {
+			font-size: 38px;
+			margin-top: 0;
+		}
+		.loanСheckDescription {
+			width: 100%;
+			font-size: 20px;
+			margin: 12px 0 22px 0;
+		}
+
+		.loanСheckBlock {
+			button {
+				margin-top: 22px;
+				padding: 17px 20px;
+				font-size: 16px;
+			}
+
+			img {
+				&:nth-child(3) {
+					top: -5rem;
+					right: -4rem;
+				}
+				&:nth-child(2) {
+					top: 1rem;
+					right: 8rem;
+				}
+				&:nth-child(4) {
+					width: 32px;
+					height: 32px;
+					top: 6rem;
+					right: 2rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.loanСheck {
+		.loanСheckBlock {
+			img {
+				&:nth-child(3) {
+					width: 125px;
+					height: 125px;
+					top: -3rem;
+					right: -2rem;
+				}
+				&:nth-child(2) {
+					width: 18px;
+					height: 18px;
+					right: 7rem;
+				}
+				&:nth-child(4) {
+					top: 5rem;
+					right: 1rem;
+				}
+			}
+		}
+	}
+}

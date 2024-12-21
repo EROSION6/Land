@@ -1,0 +1,184 @@
+.subscriptionNotFound {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 12px;
+	padding: 10px 20px;
+	overflow: hidden;
+
+	.examination {
+		width: 130rem;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		background: url('/public/bg.png');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		h2 {
+			color: rgb(255, 255, 255);
+			font-size: 62px;
+			font-weight: 800;
+			text-align: center;
+			margin-top: 72px;
+		}
+		p {
+			&:nth-child(3) {
+				color: rgb(128, 130, 141);
+				font-size: 24px;
+				font-weight: 400;
+				line-height: 29px;
+				text-align: center;
+				width: 45rem;
+				margin: 28px 0 40px 0;
+			}
+
+			&:nth-child(5) {
+				color: rgb(255, 255, 255);
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 22px;
+				letter-spacing: 0%;
+				text-align: center;
+				margin-top: 22px;
+				width: 20rem;
+
+				b {
+					font-weight: bold;
+				}
+			}
+		}
+
+		button {
+			width: 23rem;
+			padding: 23px 34px;
+		}
+	}
+}
+
+.offerCard {
+	width: 100%;
+	margin-top: 100px;
+	padding: 0 200px;
+	margin-bottom: 150px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h2 {
+		color: rgb(255, 255, 255);
+		font-size: 62px;
+		font-weight: 800;
+		line-height: 74px;
+		letter-spacing: 0%;
+		text-align: center;
+		width: 44rem;
+	}
+
+	p {
+		color: rgb(128, 130, 141);
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 29px;
+		text-align: center;
+		margin-top: 22px;
+	}
+
+	.gridOffer {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 21px;
+		margin-top: 52px;
+	}
+
+	.more {
+		color: rgb(34, 37, 40);
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 26px;
+		letter-spacing: 0%;
+		text-align: left;
+
+		padding: 28px 55px;
+		border-radius: 16px;
+		border: none;
+		background: rgb(255, 255, 255);
+		margin-top: 42px;
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 769px) {
+	.subscriptionNotFound {
+		.examination {
+			width: 100%;
+			img {
+				width: 90px;
+				height: 90px;
+			}
+			h2 {
+				font-size: 28px;
+				line-height: 30px;
+				margin-top: 32px;
+			}
+			p {
+				&:nth-child(3) {
+					font-size: 16px;
+					line-height: 17px;
+					margin: 22px 0;
+					width: 90%;
+				}
+				&:nth-child(5) {
+					width: 100%;
+					font-size: 12px;
+					line-height: 17px;
+				}
+			}
+
+			button {
+				font-size: 16px;
+				padding: 17px 24px;
+			}
+		}
+	}
+
+	.offerCard {
+		margin-top: 42px;
+		padding: 0 5px;
+		margin-bottom: 50px;
+
+		h2 {
+			font-size: 28px;
+			line-height: 30px;
+		}
+		p {
+			font-size: 14px;
+			line-height: 17px;
+		}
+
+		.gridOffer {
+			margin-top: 22px;
+		}
+
+		.more {
+			font-size: 14px;
+			padding: 17px 20px;
+			margin-top: 22px;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.subscriptionNotFound {
+		.examination {
+			button {
+				width: 100%;
+			}
+		}
+	}
+}

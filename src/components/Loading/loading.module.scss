@@ -1,0 +1,60 @@
+.loading {
+	margin-bottom: 160px;
+
+	.slider {
+		position: relative;
+		width: 750px;
+		height: 35px;
+		border-radius: 50px;
+		background: rgb(49, 48, 53);
+		margin-top: 40px;
+		overflow: hidden;
+
+		.fill {
+			height: 100%;
+			border-radius: 50px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: width 0.3s ease;
+		}
+
+		span {
+			padding: 15px 7px;
+			border-radius: 39px;
+			background: rgb(255, 255, 255);
+			color: rgb(34, 37, 40);
+			font-size: 22px;
+			font-weight: 800;
+			line-height: 22px;
+			letter-spacing: 0%;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 1;
+			transition: all 0.3s ease;
+		}
+	}
+	.percent {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 18px;
+
+		span {
+			color: rgb(255, 255, 255);
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 22px;
+			text-align: left;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.loading {
+		margin-bottom: 50px;
+		.slider {
+			width: 100%;
+		}
+	}
+}

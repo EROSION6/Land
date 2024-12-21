@@ -1,0 +1,77 @@
+.registrations {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 12px;
+	padding: 10px 20px;
+
+	h3 {
+		color: rgb(255, 255, 255);
+		font-size: 62px;
+		font-weight: 800;
+		line-height: 74px;
+		letter-spacing: 0%;
+		text-align: center;
+		margin-bottom: 52px;
+	}
+
+	.registrationForm {
+		padding: 40px;
+		display: flex;
+		flex-direction: column;
+		gap: 18px;
+		margin-top: 52px;
+		margin-bottom: 160px;
+
+		.option {
+			display: flex;
+			flex-direction: column;
+
+			label {
+				color: white;
+				font-size: 18px;
+				line-height: 22px;
+				letter-spacing: 0%;
+				text-align: left;
+				margin-bottom: 16px;
+			}
+
+			select {
+				padding: 19px 14px;
+				border-radius: 12px;
+				border: 1px solid rgb(128, 130, 141);
+				background-color: transparent;
+
+				color: rgb(128, 130, 141);
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 26px;
+				letter-spacing: 0%;
+				text-align: left;
+
+				outline: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.registrations {
+		h3 {
+			font-size: 30px;
+			margin-bottom: 0;
+		}
+
+		.registrationForm {
+			padding: 20px;
+			margin-top: 22px;
+			margin-bottom: 50px;
+
+			button {
+				padding: 17px 20px;
+				font-size: 16px;
+			}
+		}
+	}
+}

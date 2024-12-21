@@ -1,0 +1,43 @@
+.input {
+	display: flex;
+	flex-direction: column;
+
+	label {
+		color: white;
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0%;
+		text-align: left;
+		margin-bottom: 16px;
+	}
+
+	input {
+		padding: 19px 14px;
+		border-radius: 12px;
+		border: 1px solid rgb(128, 130, 141);
+		background-color: transparent;
+
+		color: rgb(128, 130, 141);
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 26px;
+		letter-spacing: 0%;
+		text-align: left;
+
+		outline: none;
+	}
+}
+
+input[type='date'] {
+	padding: 0.8em 0.9em;
+	&::-webkit-datetime-edit-text {
+		color: rgb(128, 130, 141);
+		padding: 0 0.3em;
+	}
+	&::-webkit-inner-spin-button {
+		display: none;
+	}
+	&::-webkit-calendar-picker-indicator {
+		background-image: url('/src/assets/svg/Vector (22).svg');
+	}
+}

@@ -1,0 +1,252 @@
+.linkingCard {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 12px;
+	padding: 10px 20px;
+
+	h3 {
+		color: rgb(255, 255, 255);
+		font-size: 62px;
+		font-weight: 800;
+		text-align: center;
+		margin-top: 52px;
+	}
+
+	.linkingCardDescri {
+		color: rgb(128, 130, 141);
+		font-size: 24px;
+		font-weight: 400;
+		margin-top: 32px;
+		text-align: center;
+		width: 44rem;
+	}
+
+	.linkingCardError {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+
+		.bankError {
+			display: flex;
+			align-items: center;
+			gap: 18px;
+
+			.imageError {
+				position: relative;
+				img {
+					width: 84px;
+					height: 84px;
+				}
+
+				span {
+					padding: 5px 10px;
+					position: absolute;
+					border-radius: 66px;
+					font-weight: bold;
+					color: white;
+					font-size: 16px !important;
+					border: 5px solid #313035;
+
+					background: rgb(255, 71, 74);
+					left: -17px;
+					top: -10px;
+				}
+			}
+		}
+
+		p {
+			color: rgb(128, 130, 141);
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 24px;
+			letter-spacing: 0%;
+			text-align: left;
+		}
+	}
+
+	.cardForm {
+		display: flex;
+		flex-direction: column;
+
+		padding: 40px;
+		margin-top: 52px;
+
+		.logo {
+			width: 210px;
+			height: 22px;
+			margin-top: 32px;
+		}
+
+		.cardInput {
+			position: relative;
+
+			input {
+				padding-right: 60px;
+			}
+
+			img {
+				position: absolute;
+				top: 60px;
+				right: 20px;
+			}
+		}
+
+		.cardDeadlines {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 12px;
+			margin-top: 32px;
+			width: 100%;
+
+			.left {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 12px;
+
+				input {
+					width: 100%;
+				}
+			}
+		}
+
+		.footer {
+			display: flex;
+			flex-direction: column;
+
+			p {
+				color: rgb(255, 255, 255);
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 22px;
+				letter-spacing: 0%;
+				text-align: left;
+				margin-top: 32px;
+			}
+		}
+	}
+	.loadingPassport {
+		.slider {
+			position: relative;
+			width: 750px;
+			height: 35px;
+			border-radius: 50px;
+			background: rgb(49, 48, 53);
+			margin-top: 40px;
+			overflow: hidden;
+
+			.fill {
+				height: 100%;
+				border-radius: 50px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transition: width 0.3s ease;
+			}
+
+			span {
+				padding: 15px 7px;
+				border-radius: 39px;
+				background: rgb(255, 255, 255);
+				color: rgb(34, 37, 40);
+				font-size: 22px;
+				font-weight: 800;
+				line-height: 22px;
+				letter-spacing: 0%;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				z-index: 1;
+				transition: all 0.3s ease;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.linkingCard {
+		h3 {
+			font-size: 38px;
+		}
+
+		.linkingCardError {
+			.bankError {
+				gap: 8px;
+				.imageError {
+					img {
+						width: 35px;
+						height: 35px;
+					}
+					span {
+						padding: 1px 5px;
+						color: white;
+						font-size: 14px !important;
+					}
+				}
+			}
+
+			p {
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
+
+		.linkingCardDescri {
+			width: 100%;
+			font-size: 14px;
+		}
+
+		.cardForm {
+			margin-top: 22px;
+			padding: 20px;
+
+			.cardInput {
+				label {
+					font-size: 13px;
+				}
+				input {
+					width: 100%;
+					font-size: 12px;
+				}
+			}
+
+			.cardDeadlines {
+				margin-top: 18px;
+				label {
+					font-size: 13px;
+				}
+				input {
+					width: 100%;
+					font-size: 12px;
+				}
+			}
+		}
+
+		.footer {
+			.logo {
+				margin-top: 18px;
+				width: 132px;
+				height: 14px;
+			}
+
+			button {
+				padding: 20px 17px;
+				font-size: 16px;
+			}
+
+			p {
+				font-size: 12px;
+				margin-top: 18px;
+			}
+		}
+
+		.loadingPassport {
+			.slider {
+				width: 100%;
+			}
+		}
+	}
+}

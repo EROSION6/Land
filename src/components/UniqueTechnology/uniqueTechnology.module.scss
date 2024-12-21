@@ -1,0 +1,110 @@
+.uniqueTechnology {
+	width: 1440px;
+	display: flex;
+	gap: 40px;
+	padding: 0 15px;
+
+	.left {
+		display: flex;
+		align-items: start;
+		flex-direction: column;
+		gap: 32px;
+		b {
+			color: rgb(234, 93, 57);
+			font-size: 26px;
+			font-weight: 700;
+			line-height: 31px;
+			text-align: left;
+		}
+		h3 {
+			color: rgb(34, 37, 40);
+			font-size: 72px;
+			font-weight: 800;
+			line-height: 74px;
+			text-align: left;
+		}
+		p {
+			color: rgb(128, 130, 141);
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 24px;
+			text-align: left;
+			margin-bottom: 10px;
+		}
+	}
+
+	.right {
+		width: 60rem;
+		height: 40rem;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.uniqueTechnology {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.uniqueTechnology {
+		flex-direction: column-reverse;
+		.right {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.uniqueTechnology {
+		.left {
+			gap: 22px;
+			b {
+				font-size: 16px;
+				line-height: 24px;
+			}
+			h3 {
+				font-size: 40px;
+				line-height: 30px;
+			}
+			p {
+				font-size: 16px;
+				line-height: 24px;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.uniqueTechnology {
+		.left {
+			gap: 12px;
+			b {
+				font-size: 14px;
+				line-height: 17px;
+			}
+			h3 {
+				font-size: 28px;
+				line-height: 30px;
+			}
+			p {
+				font-size: 14px;
+				line-height: 17px;
+			}
+
+			button {
+				width: 100%;
+				padding: 17px 20px;
+				font-size: 16px;
+				margin-top: 12px;
+			}
+		}
+	}
+}

@@ -1,0 +1,234 @@
+.signingOffer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 12px;
+	padding: 10px 20px;
+
+	h3 {
+		color: rgb(255, 255, 255);
+		font-size: 62px;
+		font-weight: 800;
+		line-height: 74px;
+		letter-spacing: 0%;
+		text-align: center;
+		margin-bottom: 52px;
+	}
+
+	.signingOfferBlock {
+		margin-bottom: 50px;
+		strong {
+			color: white;
+			font-size: 26px;
+			font-weight: 700;
+			line-height: 31px;
+			letter-spacing: 0%;
+			text-align: left;
+
+			span {
+				color: rgb(23, 183, 103);
+			}
+		}
+		p {
+			color: rgb(128, 130, 141);
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 24px;
+			letter-spacing: 0%;
+			text-align: left;
+			margin-top: 16px;
+		}
+	}
+
+	.signingOfferForm {
+		padding: 40px;
+		margin-bottom: 160px;
+
+		.dopInfo {
+			width: 100%;
+
+			.check {
+				display: flex;
+				align-items: center;
+				color: rgb(255, 255, 255);
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 19px;
+				letter-spacing: 0%;
+				text-align: left;
+				gap: 8px;
+				margin: 22px 0 12px 0;
+			}
+
+			.insurance {
+				width: 100%;
+				border-radius: 16px;
+				padding: 20px;
+				background: rgb(61, 60, 65);
+
+				ul {
+					display: flex;
+					flex-direction: column;
+					gap: 12px;
+					li {
+						color: rgb(255, 255, 255);
+						font-size: 16px;
+						font-weight: 700;
+						line-height: 19px;
+						text-align: left;
+						list-style: none;
+
+						display: flex;
+						align-items: center;
+						gap: 8px;
+					}
+				}
+			}
+
+			button {
+				margin-top: 42px;
+				width: 100%;
+			}
+		}
+
+		.btns {
+			display: flex;
+			gap: 12px;
+			button {
+				font-size: 18px;
+
+				&:nth-child(1) {
+					color: rgb(255, 255, 255);
+					font-weight: 700;
+					line-height: 22px;
+					letter-spacing: 0%;
+					text-align: left;
+					border-radius: 56px;
+					background: rgb(234, 93, 57);
+					border: none;
+
+					padding: 8px 14px;
+				}
+				&:nth-child(2) {
+					color: rgb(128, 130, 141);
+					font-weight: 600;
+					line-height: 22px;
+					letter-spacing: 0%;
+					text-align: left;
+					border: none;
+
+					padding: 8px 14px;
+					border-radius: 56px;
+					background: rgb(61, 60, 65);
+				}
+			}
+		}
+
+		form {
+			position: relative;
+
+			input {
+				padding-right: 165px;
+			}
+
+			button {
+				position: absolute;
+				right: 14px;
+				top: 25px;
+
+				color: rgb(255, 255, 255);
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 22px;
+				letter-spacing: 0%;
+				text-align: left;
+				border-radius: 16px;
+				background: rgb(234, 93, 57);
+				border: none;
+
+				padding: 14px 12px;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.signingOffer {
+		h3 {
+			font-size: 28px;
+			line-height: 30px;
+			margin-bottom: 22px;
+		}
+
+		.signingOfferBlock {
+			margin-bottom: 22px;
+
+			strong {
+				font-size: 18px;
+			}
+			p {
+				font-size: 11px;
+				line-height: 18px;
+				margin-top: 4px;
+			}
+		}
+
+		.signingOfferForm {
+			margin-bottom: 50px;
+			padding: 20px;
+			.btns {
+				button {
+					font-size: 12px;
+				}
+			}
+			form {
+				button {
+					font-size: 12px;
+				}
+				input {
+					font-size: 14px;
+					padding-right: 130px;
+				}
+			}
+
+			.dopInfo {
+				width: 100%;
+
+				.check {
+					font-size: 12px;
+					line-height: 16px;
+
+					img {
+						width: 21px;
+						height: 21px;
+					}
+				}
+
+				.insurance {
+					ul {
+						li {
+							font-size: 12px;
+							line-height: 16px;
+
+							img {
+								width: 21px;
+								height: 21px;
+							}
+						}
+					}
+				}
+
+				button {
+					font-size: 16px;
+					padding: 17px 20px;
+					margin-top: 22px;
+				}
+				p{
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}

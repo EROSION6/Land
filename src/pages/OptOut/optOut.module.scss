@@ -1,0 +1,266 @@
+.unsubscribe {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 12px;
+	padding: 10px 20px;
+
+	h2 {
+		color: rgb(255, 255, 255);
+		font-size: 62px;
+		font-weight: 800;
+		line-height: 74px;
+		letter-spacing: 0%;
+		text-align: center;
+	}
+
+	.formUnsubscribe {
+		display: flex;
+		flex-direction: column;
+		gap: 18px;
+		margin-top: 52px;
+
+		padding: 40px;
+
+		.option {
+			display: flex;
+			flex-direction: column;
+
+			label {
+				color: white;
+				font-size: 18px;
+				line-height: 22px;
+				letter-spacing: 0%;
+				text-align: left;
+				margin-bottom: 16px;
+			}
+
+			select {
+				padding: 19px 14px;
+				border-radius: 12px;
+				border: 1px solid rgb(128, 130, 141);
+				background-color: transparent;
+
+				color: rgb(128, 130, 141);
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 26px;
+				letter-spacing: 0%;
+				text-align: left;
+
+				outline: none;
+			}
+		}
+
+		p {
+			color: rgb(255, 255, 255);
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 22px;
+			letter-spacing: 0%;
+
+			&:nth-child(5) {
+				text-align: center;
+			}
+
+			a {
+				text-decoration: none;
+				font-weight: bold;
+				color: rgb(255, 255, 255);
+			}
+		}
+
+		button {
+			width: 100%;
+			margin-top: 22px;
+		}
+	}
+
+	.offerCard {
+		width: 100%;
+		margin-top: 70px;
+		padding: 0 200px;
+		margin-bottom: 160px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.gridOffer {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 21px;
+			margin-top: 52px;
+		}
+
+		.more {
+			color: rgb(34, 37, 40);
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 26px;
+			letter-spacing: 0%;
+			text-align: left;
+
+			padding: 28px 55px;
+			border-radius: 16px;
+			border: none;
+			background: rgb(255, 255, 255);
+			margin-top: 42px;
+			cursor: pointer;
+		}
+	}
+}
+
+.modalContact {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.3);
+	inset: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+
+	.content {
+		width: 594px;
+
+		padding: 24px;
+		border-radius: 32px;
+		background: rgb(49, 48, 53);
+
+		.text {
+			width: 100%;
+			height: 50px;
+			display: flex;
+			padding-bottom: 50px;
+			border-bottom: 2px solid rgb(61, 60, 65);
+
+			justify-content: space-between;
+			p {
+				color: rgb(255, 255, 255);
+				font-size: 26px;
+				font-weight: 700;
+				line-height: 31px;
+				letter-spacing: 0%;
+				text-align: left;
+				margin-bottom: 42px;
+			}
+
+			button {
+				width: 17.6px;
+				height: 17.6px;
+				font-size: 18px;
+				border: none;
+				color: white;
+				background-color: transparent;
+				outline: none;
+				cursor: pointer;
+			}
+		}
+
+		.btns {
+			width: 100%;
+			display: flex;
+			gap: 17px;
+			align-items: center;
+			padding-top: 20px;
+
+			button {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
+				border: none;
+				background-color: transparent;
+				cursor: pointer;
+
+				strong {
+					color: rgb(255, 255, 255);
+					font-size: 12px;
+					font-weight: 800;
+					line-height: 14px;
+					letter-spacing: 0%;
+					text-align: center;
+				}
+				span {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					&:nth-child(1) {
+						width: 42.83px;
+						height: 42px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						padding: 12px;
+						border-radius: 10px;
+						backdrop-filter: blur(4px);
+						background: rgb(61, 60, 65);
+						margin-bottom: 8px;
+						img {
+							width: 17.85px;
+							height: 17.5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.unsubscribe {
+		.offerCard {
+			padding: 0 20px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.unsubscribe {
+		h2 {
+			font-size: 30px;
+			line-height: 30px;
+		}
+
+		.formUnsubscribe {
+			padding: 20px;
+			margin-top: 22px;
+			gap: 12px;
+			input,
+			label {
+				font-size: 16px;
+			}
+
+			p {
+				font-size: 12px;
+			}
+
+			button {
+				font-size: 14px;
+				padding: 17px 20px;
+				margin-top: 0;
+			}
+		}
+
+		.offerCard {
+			padding: 0 5px;
+			margin-bottom: 50px;
+
+			.gridOffer {
+				margin-top: 22px;
+			}
+
+			.more {
+				font-size: 14px;
+				padding: 17px 20px;
+				margin-top: 22px;
+			}
+		}
+	}
+}
